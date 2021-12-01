@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+#navbar {
+  margin-bottom: 20px;
+}
+body > app-root > div > nav > div > div.navbar-header > a {
+  padding-top: 5px!important;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+table {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-width: 500px;
+}
+th.mat-header-cell {
+  text-align: left;
+  max-width: 300px;
+}
+
+.custom-tooltip {
+  font-size:12px;
+  margin-left: -13em!important;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.column-list {
+  columns: 300px;
+}
+@font-face {
+  font-family: "Star Jedi";
+  src: url(assets/fonts/star-jedi_[allfont.net].ttf) format("truetype");
+}
+
+body, mat-table, mat-input-element, mat-paginator, body > app-root > div > div > app-character-details > div > div > div > h5 > span {
+  font-family: 'Star Jedi', arial!important;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+#mat-select-value-1 > span > span, body > app-root > div > footer > div > h6
+{
+  font-family: 'Star Jedi', arial!important;
+
+}
+

@@ -1,0 +1,52 @@
+<div class="row" xmlns="http://www.w3.org/1999/html">
+  <div class="col-sm-12">
+    <!-- details -->
+    <div class="col-lg-6 col-md-5 col-sm-12" *ngIf="detailsData">
+      <h5 class="subtitle">
+        <span>Details</span>
+      </h5>
+      <table class="table-details">
+        <thead></thead>
+        <tbody>
+        <tr>
+          <th>Name</th>
+          <td>{{detailsData.name}}</td>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <td>{{detailsData.height}}</td>
+        </tr>
+        <tr>
+          <th>Mass</th>
+          <td>{{detailsData.mass}}</td>
+        </tr>
+        <tr>
+          <th>Birth year</th>
+          <td>{{detailsData.birth_year}}</td>
+        </tr>
+        <tr>
+          <th>Gender</th>
+          <td>{{detailsData.gender}}</td>
+        </tr>
+        <tr>
+          <th>Homeworld</th>
+          <td>{{homeData.name}}</td>
+        </tr>
+        <tr>
+          <th valign="top">Films</th>
+          <td>
+            <div>
+              <ul *ngFor="let film of filmsList" class="column-list">
+                <li>
+                  {{film.title}}
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- / details -->
+  </div>
+</div>
