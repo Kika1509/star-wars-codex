@@ -13,13 +13,16 @@ import {AppMaterialModule} from "./shared/app.material-module";
 import { CharacterDetailsComponent } from './characters/character-details/character-details.component';
 import {MatTooltipModule} from "@angular/material/tooltip";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import { FilmsComponent } from './films/films.component';
+import {FilmsService} from "./shared/films.service";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CharactersComponent,
-    CharacterDetailsComponent
+    CharacterDetailsComponent,
+    FilmsComponent
   ],
   imports: [
     AppMaterialModule,
@@ -32,7 +35,7 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
     MatTooltipModule,
     MatSlideToggleModule
   ],
-  providers: [CharactersService],
+  providers: [CharactersService, FilmsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

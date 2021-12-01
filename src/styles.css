@@ -44,9 +44,13 @@ body, mat-table, mat-input-element, mat-paginator, body > app-root > div > div >
   font-size: 48px;
   text-shadow: 4px 4px 4px #aaa;
 }
-#mat-select-value-1 > span > span, body > app-root > div > footer > div > h6
+#mat-select-value-1 > span > span, body > app-root > div > footer > div > h6, #navbar > ul > li > a, #mat-select-value-9 > span > span
 {
   font-family: 'Star Jedi', arial!important;
 
+}
+
+#navbar > ul > li > a {
+  margin-top: 10px;
 }
 
